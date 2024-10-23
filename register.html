@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Registration</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: palevioletred;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .container {
+        width: 50%;
+        margin: 0 auto;
+      }
+      .form {
+        padding: 10px;
+        background-color: #fff;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      #name-id,
+      #email-id,
+      #phone-id,
+      #job-id {
+        width: 95%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      #source-id {
+        width: 98%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      label {
+        font-weight: bold;
+      }
+      input[type="submit"] {
+        background-color: palevioletred;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: pink;
+      }
+      footer {
+        background-color: palevioletred;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Register for the Tech Conference 2024</h1>
+    </header>
+
+    <div class="container">
+      <div class="form">
+        <h2>Registration Form</h2>
+        <form action="" method="POST">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name-id" name="name" required />
+          <br />
+          <label for="email">Email Address:</label>
+          <input type="email" id="email-id" name="email" required />
+          <br />
+          <label for="phone">Contact Number:</label>
+          <input type="tel" id="phone-id" name="phone" required />
+          <br />
+          <label for="job">Job/Industry:</label>
+          <input type="text" id="job-id" name="job" required />
+          <br />
+          <label for="source">How did you hear about this event?</label>
+          <select id="source-id" name="source" required>
+            <option value="none" disabled selected hidden>
+              Select an option
+            </option>
+            <option value="friend">From a Friend</option>
+            <option value="radio_tv">Radio/TV</option>
+            <option value="social_media">Social Media</option>
+            <option value="posters_ads">Posters/Ads</option>
+          </select>
+          <br />
+          <br />
+          <input type="submit" value="Submit Registration" />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2024 Tech Conference. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
